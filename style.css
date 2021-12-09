@@ -1,0 +1,134 @@
+@import url("reset.css");
+@font-face {
+    font-family: "ko-basic";
+    src: url("./font/Santana.ttf");
+
+    font-family: "en-basic";
+    src: url("./font/Santana-BlackCondensed.ttf");
+}
+/* Global style */
+:root {
+    /* color */
+    --color-white: #fff;
+    --color-black: #111;
+    --color-green: #00704a;
+    --color-lightgreen: #539900;
+    --color-darkgray: #2c2a29;
+    --color-lightgray: #999999;
+
+    /* font-size */
+    --max-font: 43px;
+    --mid-font: 25px;
+    --small-font: 17px;
+    --mini-font: 13px;
+
+    /* border radius */
+    --border-radius: 5px;
+    --border-solid: solid;
+
+    /* margin-top */
+    --margin-top: 15px;
+
+    /* transtition sec */
+    --transition-sec: 300ms;
+}
+
+/* body */
+body {
+    font-family: "ko-basic";
+}
+
+/* nav  */
+
+nav {
+    background: #f6f5ef;
+    width: 100%;
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.nav_top {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-darkgray);
+    font-size: var(--mini-font);
+    position: absolute;
+    left: 900px;
+}
+
+.nav_top li {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.fas.fa-search {
+    font-size: var(--small-font);
+    background: var(--color-white);
+    padding: 5px;
+    border: var(--border-solid) var(--color-lightgray) 1px;
+    border-radius: var(--border-radius);
+    margin-top: -20px;
+}
+
+.nav_menuBarSet img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0 15px 150px;
+}
+
+.nav_menuBarSet {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--small-font);
+}
+
+.nav_menuBar {
+    display: flex;
+    margin: 70px 300px 20px 0px;
+}
+
+.nav_menuBar li {
+    margin-left: 30px;
+}
+
+/* artice id = home*/
+
+article {
+    width: 100%;
+}
+
+#home {
+    background: #d1131d;
+}
+
+#home img {
+    width: 100%;
+}
+#home .addmoreBtn {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    border-color: var(--color-white);
+    color: var(--color-white);
+    text-align: center;
+}
+
+/* btn */
+
+.addmoreBtn {
+    border-radius: var(--border-radius);
+    width: 130px;
+    height: 35px;
+    background: none;
+    border: solid 2px;
+    font-size: var(--mini-font);
+    cursor: pointer;
+}
+
+/* opacity 사용하려면 rgba 사용해야 함  */
+.addmoreBtn:hover {
+    background: rgba(255, 255, 255, 0.5);
+
+    transition: var(--transition-sec) linear;
+}
